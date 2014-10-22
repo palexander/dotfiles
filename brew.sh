@@ -1,0 +1,13 @@
+brew install git
+brew install zsh
+brew install mysql
+brew install ruby-build
+brew install rbenv
+brew install elasticsearch
+brew install postgres
+brew install tmux
+brew install yuicompressor
+brew install redis
+brew install solr
+brew install memcached
+brew install the_silver_searcher
