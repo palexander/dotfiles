@@ -1,3 +1,4 @@
+brew cask install caskroom/versions/java7
 brew cask install firefox
 brew cask install google-chrome-beta
 brew cask install iterm2-beta
