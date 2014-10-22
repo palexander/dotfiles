@@ -15,7 +15,7 @@ sublime-text3 \
 virtualbox \
 bartender \
 aerofs \
-dashlane \
+# dashlane \
 mjolnir \
 rubymine \
 steam \
