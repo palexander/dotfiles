@@ -1,6 +1,6 @@
 brew cask install \
 firefox \
-firefox-aurora \
+# firefox-aurora \
 google-chrome-beta \
 iterm2-beta \
 sequel-pro \
