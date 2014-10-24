@@ -29,6 +29,14 @@ antigen theme $HOME/src/dotfiles/zsh_themes/prompt_prezto_powerline_setup
 # Tell antigen that you're done.
 antigen apply
 
-DEFAULT_USER=palexand
-
+# Customize to your needs...
 source $HOME/.profile
+
+DEFAULT_USER="palexand"
+
+# Enable custom commands to use built-in zsh autocompleters
+compdef _hosts rscreen
+compdef _hosts screensh
+
+# Better confirmation when using rm
+setopt normstarsilent
