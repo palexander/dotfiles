@@ -8,7 +8,7 @@
   -	brew tap caskroom/fonts
 - Cask env (moves applications to main folder)
   -	export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom" 
-  -	This installs the applications in /usr/local/Caskroom and puts symlinks in /Applications. However, Alfred and Spotlight won't pick up symlinks. In Alfred, you can add /usr/local/Caskroom to the list of indexed directories to fix the problem, no solution for Spotlight
+  -	This installs the applications in /usr/local/Caskroom and puts symlinks in /Applications. However, Alfred and Spotlight won't pick up symlinks. In Alfred, you can add /usr/local/Caskroom to the list of indexed directories to fix the problem, no solution for Spotlight.
 - Configure OSX
   -	curl -L https://raw.githubusercontent.com/palexander/dotfiles/master/osx_settings.sh | sh 
 - Install brew cask applications
@@ -24,9 +24,8 @@
   -	https://github.com/zsh-users/antigen
   -	Sample zsh config using antigen: https://github.com/palexander/dotfiles/blob/master/zshrc
 - Symlink shell configs
-	- ln -s ~/src/dotfiles/zshrc ~/.zshrc
-	- ln -s ~/src/dotfiles/profile ~/.profile
-- Change default shell to zsh
+	- curl -L https://raw.githubusercontent.com/palexander/dotfiles/master/symlinks.sh | sh
+- Change default shell to zsh (not needed if using oh-my-zsh)
   -	sudo vim /etc/shells
   -	add "/usr/local/bin/zsh" to list
   -	chsh -s /usr/local/bin/zsh
@@ -40,3 +39,13 @@
   -	cp -R $OLD_HOME/.bundler $HOME/
 - Install bundler
   -	gem install bundler
+- Copy tmuxinator conf
+	- cp -R $OLD_HOME/.tmuxinator $HOME/
+- Configure solr
+	- See ncbo/documentation
+- tmux
+	- mouse support
+	- number windows starting at 1
+- Sublime
+	- Link directories in Application Support to Dropbox
+	- Part of https://github.com/palexander/dotfiles/blob/master/symlinks.sh
