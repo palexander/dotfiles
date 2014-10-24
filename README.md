@@ -1,0 +1,42 @@
+# Reinstall Steps
+
+- Install homebrew:
+	- ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+- Install homebrew cask: 
+  -	brew install caskroom/cask/brew-cask 
+  -	brew tap caskroom/versions
+  -	brew tap caskroom/fonts
+- Cask env (moves applications to main folder)
+  -	export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom" 
+  -	This installs the applications in /usr/local/Caskroom and puts symlinks in /Applications. However, Alfred and Spotlight won't pick up symlinks. In Alfred, you can add /usr/local/Caskroom to the list of indexed directories to fix the problem, no solution for Spotlight
+- Configure OSX
+  -	curl -L https://raw.githubusercontent.com/palexander/dotfiles/master/osx_settings.sh | sh 
+- Install brew cask applications
+  -	curl -L https://raw.githubusercontent.com/palexander/dotfiles/master/cask.sh | sh
+- Install brew applications
+  -	curl -L https://raw.githubusercontent.com/palexander/dotfiles/master/brew.sh | sh
+- Install hardlink
+  -	https://github.com/selkhateeb/hardlink
+- Install mjolnir.io
+  -	Config files here: https://github.com/palexander/dotfiles/tree/master/mjolnir
+- Copy old ssh keys ($HOME/.ssh)
+- Install antigen
+  -	https://github.com/zsh-users/antigen
+  -	Sample zsh config using antigen: https://github.com/palexander/dotfiles/blob/master/zshrc
+- Symlink shell configs
+	- ln -s ~/src/dotfiles/zshrc ~/.zshrc
+	- ln -s ~/src/dotfiles/profile ~/.profile
+- Change default shell to zsh
+  -	sudo vim /etc/shells
+  -	add "/usr/local/bin/zsh" to list
+  -	chsh -s /usr/local/bin/zsh
+- Install ruby
+  -	rbenv install 2.1.3
+  -	rbenv global 2.1.3
+- Install rbenv-gem-rehash
+  -	https://github.com/sstephenson/rbenv-gem-rehash
+  -	git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+- Copy bundler config
+  -	cp -R $OLD_HOME/.bundler $HOME/
+- Install bundler
+  -	gem install bundler
