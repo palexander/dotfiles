@@ -35,7 +35,7 @@
 		- Automatic Login: Off
 		- Display Login Window As: Name and password
 		- Edit /etc/pam.d/authorization and /etc/pam.d/screensaver to include this (likely just add default_principal to the first line):
-			auth       optional       pam_krb5.so use_first_pass use_kcminit default_principal
+			- auth       optional       pam_krb5.so use_first_pass use_kcminit default_principal
 		- Password and username for your local account may need to match your sunet id and password
 		- Log out / log back in
 		- Run klist and see if you have any valid tokens
