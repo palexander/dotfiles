@@ -29,6 +29,16 @@
   -	sudo vim /etc/shells
   -	add "/usr/local/bin/zsh" to list
   -	chsh -s /usr/local/bin/zsh
+- Kerberos config
+	- Install Kerberos Commander: https://itservices.stanford.edu/service/ess/mac/kerberos
+	- Users and Groups
+		- Automatic Login: Off
+		- Display Login Window As: Name and password
+		- Edit /etc/pam.d/authorization and /etc/pam.d/screensaver to include this (likely just add default_principal to the first line):
+			auth       optional       pam_krb5.so use_first_pass use_kcminit default_principal
+		- Password and username for your local account may need to match your sunet id and password
+		- Log out / log back in
+		- Run klist and see if you have any valid tokens
 - Install ruby
   -	rbenv install 2.1.3
   -	rbenv global 2.1.3
@@ -44,8 +54,8 @@
 - Configure solr
 	- See ncbo/documentation
 - tmux
-	- mouse support
-	- number windows starting at 1
+	- Link config file
+	- Part of https://github.com/palexander/dotfiles/blob/master/symlinks.sh
 - Sublime
 	- Link directories in Application Support to Dropbox
 	- Part of https://github.com/palexander/dotfiles/blob/master/symlinks.sh
