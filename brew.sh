@@ -15,3 +15,4 @@ brew install go
 brew install python
 brew install fourstore
 brew install coreutils
+brew install nodejs
