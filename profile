@@ -13,6 +13,7 @@ alias pull='git pull'
 alias push='git push'
 alias master='git checkout master'
 alias staging='git checkout staging'
+alias cask='brew cask'
 
 # Functions for aliasing
 screensh() { ssh -t "$@" 'screen -RR -S main';}
