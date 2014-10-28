@@ -25,5 +25,6 @@ brew cask install flash
 brew cask install adobe-air
 brew cask install font-ubuntu
 brew cask install font-ubuntu-mono-powerline
+brew cask install brackets
 # brew cask install firefox-aurora
 # brew cask install dashlane
