@@ -1,0 +1,30 @@
+[user]
+	name = Paul R Alexander
+	email = palexander@stanford.edu
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/palexand/.gitignore_global
+	editor = vim
+	pager = less -F -X
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[format]
+	pretty = %C(yellow)%h %Cred%cr %Cblue%aN %Cgreen%d %Creset%s
+[log]
+	date = local
+[github]
+	user = palexander
+	password = pra62553
+[push]
+	default = matching
+[color]
+	ui = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
