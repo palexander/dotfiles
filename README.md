@@ -59,3 +59,5 @@
 - Sublime
 	- Link directories in Application Support to Dropbox
 	- Part of https://github.com/palexander/dotfiles/blob/master/symlinks.sh
+- Get old version of itsycal (~0.4) that supports clock in menu bar to replace default clock
+
