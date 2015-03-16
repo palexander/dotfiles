@@ -14,6 +14,8 @@ alias push='git push'
 alias master='git checkout master'
 alias staging='git checkout staging'
 alias cask='brew cask'
+alias flush_goo='redis-cli -h ncboprod-redis1 -p 6380 flushdb'
+alias flush_http='redis-cli -h ncboprod-redis2 -p 6380 flushdb'
 
 # Functions for aliasing
 screensh() { ssh -t "$@" 'screen -RR -S main';}
@@ -58,4 +60,12 @@ export EDITOR='vim'
 export DISABLE_AUTO_TITLE=true
 
 # Homebrew Cask setup
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom" 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/usr/local/Caskroom"
+
+# Tokens
+source $HOME/.tokens
+
+# Python virtualenv
+export WORKON_HOME=$HOME/.python_envs
+source /usr/local/bin/virtualenvwrapper.sh
+export VIRTUAL_ENV_DISABLE_PROMPT=1
