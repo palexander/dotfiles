@@ -10252,3 +10252,108 @@ To have launchd start redis at login:
 : 1414549766:0;kill -QUIT 71014
 : 1414550179:0;rackup -E console
 : 1414550197:0;bash
+: 1414557251:0;redis-server /usr/local/etc/redis.conf
+: 1414557258:0;ps aux | grep redis
+: 1414557281:0;4s-blowup
+: 1414557305:0;rackup -E console
+: 1414564606:0;ping 192.168.1.10
+: 1414606781:0;ssh ncbostage-rest2
+: 1414607239:0;ssh ncbo-cube1
+: 1414607420:0;open ~/Dropbox/cubism/api.html
+: 1414609829:0;rackup -E console
+: 1414610390:0;open ~/Dropbox/cubism/api.html
+: 1414610394:0;rackup -E console
+: 1414611186:0;bundle show goo
+: 1414611203:0;bundle config local.goo ~/Development/goo
+: 1414611204:0;bundle
+: 1414611215:0;cd ~/Development/goo
+: 1414611219:0;git pull
+: 1414611223:0;bundle
+: 1414611230:0;rackup -E console
+: 1414612222:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414612227:0;bundle
+: 1414612375:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414626289:0;4s-blowup
+: 1414626302:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414626361:0;killall 4s-backend
+: 1414626368:0;killall 4s-httpd
+: 1414626375:0;killall 4s-boss
+: 1414626383:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414626407:0;4s-blowup
+: 1414626410:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414626462:0;github ~/Development/goo
+: 1414626724:0;br test/models/test_ontology.rb -n test_ontology_acronym_validity
+: 1414627282:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414627283:0;push
+: 1414627304:0;git config --global push.default simple
+: 1414627306:0;push
+: 1414627321:0;subl ~/.profile
+: 1414627333:0;echo $EDITOR
+: 1414627336:0;vim
+: 1414627346:0;push
+: 1414627359:0;which git
+: 1414627362:0;git --version
+: 1414627380:0;bundle update
+: 1414627531:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414627533:0;push
+: 1414627640:0;git pull --rebase
+: 1414627658:0;git rebase --abort
+: 1414627662:0;glog
+: 1414627665:0;git log
+: 1414627676:0;git reset --hard d8786036b2ae57ec5314b09cd361703b331a8737
+: 1414627679:0;git pull
+: 1414627685:0;bundle update
+: 1414627700:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414627705:0;push
+: 1414627748:0;git pull --rebase
+: 1414627762:0;git rebase --abort
+: 1414627775:0;git log
+: 1414627813:0;git reset --hard 7ed15b10144376dc17499ae6d75f4cb18da0251b
+: 1414627815:0;git pull --rebase
+: 1414627822:0;bundle update
+: 1414627835:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414627836:0;push
+: 1414627992:0;bundle update
+: 1414628007:0;git diff
+: 1414628015:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414628016:0;push
+: 1414630052:0;bundle up
+: 1414630082:0;git diff
+: 1414630088:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414630091:0;push
+: 1414630112:0;git reset --hard HEAD~1
+: 1414630115:0;git pull
+: 1414630139:0;bundle up
+: 1414630160:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414630163:0;push
+: 1414631723:0;br test/models/test_ontology.rb -n test_ontology_acronym_existence
+: 1414631881:0;bundle up
+: 1414631895:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414631897:0;push
+: 1414631912:0;git log
+: 1414631925:0;git reset --hard e07a66034c3937f122ce9b812e2141da5c6b454b
+: 1414631926:0;git pull
+: 1414631929:0;bundle up
+: 1414631946:0;push
+: 1414631953:0;git commit Gemfile.lock -m"Gemfile.lock update" 
+: 1414631955:0;push
+: 1414688414:0;cd ~/Development/scripts
+: 1414688420:0;br query_4store.rb
+: 1414688620:0;br test/models/notes/test_note.rb
+: 1414688623:0;bundle
+: 1414688632:0;cd ~/Development/goo
+: 1414688635:0;git pull
+: 1414688641:0;bundle up
+: 1414688749:0;br test/models/notes/test_note.rb
+: 1414689454:0;4s-blowup
+: 1414689457:0;br test/models/notes/test_note.rb
+: 1414689473:0;killall 4s-boss
+: 1414689476:0;4s-blowup
+: 1414689480:0;br test/models/notes/test_note.rb
+: 1414689496:0;killall 4s-*
+: 1414689500:0;killall 4s-httpd
+: 1414689509:0;ps aux | grep 4s-
+: 1414689515:0;killall 4s-backend
+: 1414689518:0;br test/models/notes/test_note.rb
+: 1414689528:0;4s-blowup
+: 1414689533:0;br test/models/notes/test_note.rb
