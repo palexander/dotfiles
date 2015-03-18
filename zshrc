@@ -24,7 +24,7 @@ antigen bundle sorin-ionescu/prezto modules/helper
 antigen bundle $HOME/src/dotfiles/zsh_plugins/git-info
 
 # Theme
-antigen theme $HOME/src/dotfiles/zsh_themes/prompt_prezto_powerline_setup.zsh-theme
+antigen theme $HOME/src/dotfiles zsh_themes/prompt_prezto_powerline_setup.zsh-theme
 
 # Tell antigen that you're done.
 antigen apply
